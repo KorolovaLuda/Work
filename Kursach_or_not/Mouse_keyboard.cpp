@@ -17,6 +17,7 @@ void test(int a, int b, int c, int d) {
 			Drawinput1();
 			drow_button1();
 			DrawText("Input function:", 15, param1 * 2.55 / 9., param2*6.7 / 9, black);
+			clear_table();
 		}
 		if (c > param1 / 9. && c < param1 * 2 / 9.&&d>0 && d < param2 / 6.)
 		{
@@ -84,6 +85,7 @@ void test(int a, int b, int c, int d) {
 			Drawinput1();
 			drow_button1();
 			DrawText("Input set:", 10, param1 * 3 / 9., param2*6.7 / 9, black);
+			clear_table();
 		}
 		if (c > param1 * 7 / 9. && c < param1 * 8 / 9.&&d>0 && d < param2 / 6.)
 		{
@@ -94,6 +96,7 @@ void test(int a, int b, int c, int d) {
 			drow_button1();
 			DrawText("Input vector:", 13, param1 * 2.73 / 9., param2*6.7 / 9, black);
 			Drawinput1();
+			clear_table();
 		}
 		if (c > param1 * 8 / 9. && c < param1 &&d>0 && d < param2 / 6.)
 		{
@@ -121,178 +124,9 @@ void test(int a, int b, int c, int d) {
 			{
 				confirm = true;
 				Drawinput3(atoi(buff));
-				
+				str = atoi(buff);
 			}
-			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
-			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
-					index[1] = 1;
-					if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1&&str<=11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
-		}
-		if (diag_mode == 3)
-		{
-			if (c > param1 *12.9 / 18 && c<param1 *14.9 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
-				printable = true;
-			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
-			{
-				confirm = true;
-				Drawinput3(atoi(buff));
-			}
-			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
-			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
-					index[1] = 1;
-					if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1&&str<=11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
-		}
-		if (diag_mode == 4)
-		{
-			if (c > param1 *12.9 / 18 && c<param1 *14.9 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
-				printable = true;
-			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
-			{
-				confirm = true;
-				Drawinput3(atoi(buff));
-	
-			}
-			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
-			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
-					index[1] = 1;
-					if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1&&str<=11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
-		}
-		if (diag_mode == 5)
-		{
-			if (c > param1 *12.9 / 18 && c<param1 *14.9 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
-				printable = true;
-			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
-			{
-				confirm = true;
-				Drawinput2(atoi(buff));
-			}
-			if (c > param1*14.275 / 18 && c<param1*15.625 / 18)
+			if (c > param1*13.6 / 18 && c<param1*14.95 / 18)
 				index[1] = 0;
 			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
 				index[0] = 0;
@@ -316,8 +150,11 @@ void test(int a, int b, int c, int d) {
 				index[0] = 9;
 			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
 				index[0] = 10;
+			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
+				index[1] = 1;
+			Draw_table3();
 		}
-		if (diag_mode == 6)
+		if (diag_mode == 3)
 		{
 			if (c > param1 *12.9 / 18 && c<param1 *14.9 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
 				printable = true;
@@ -325,6 +162,45 @@ void test(int a, int b, int c, int d) {
 			{
 				confirm = true;
 				Drawinput3(atoi(buff));
+				str = atoi(buff);
+			}
+			if (c > param1*13.6 / 18 && c<param1*14.95 / 18)
+				index[1] = 0;
+			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
+				index[0] = 0;
+			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
+				index[0] = 1;
+			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
+				index[0] = 2;
+			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
+				index[0] = 3;
+			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
+				index[0] = 4;
+			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
+				index[0] = 5;
+			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
+				index[0] = 6;
+			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
+				index[0] = 7;
+			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
+				index[0] = 8;
+			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
+				index[0] = 9;
+			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
+				index[0] = 10;
+			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
+					index[1] = 1;
+			Draw_table3();
+		}
+		if (diag_mode == 4)
+		{
+			if (c > param1 *12.9 / 18 && c<param1 *14.9 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+				printable = true;
+			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				confirm = true;
+				Drawinput3(atoi(buff));
+				str = atoi(buff);
 			}
 			if (c > param1*13.6/18&&c<param1*14.95/18)
 					index[1] = 0;
@@ -352,6 +228,22 @@ void test(int a, int b, int c, int d) {
 				index[0] = 10;
 			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
 					index[1] = 1;
+			Draw_table3();
+		}
+		if (diag_mode == 5)
+		{
+			if (c > param1 *12.9 / 18 && c<param1 *14.9 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+				printable = true;
+			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				confirm = true;
+				Drawinput2(atoi(buff));
+				str = atoi(buff);
+			}
+			if (c > param1*14.275 / 18 && c<param1*15.625 / 18)
+				index[1] = 0;
+			if (c > param1*12.9 / 18 && c<param1*14.25 / 18)
+				index[1] = 0;
 			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
 				index[0] = 0;
 			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
@@ -374,6 +266,45 @@ void test(int a, int b, int c, int d) {
 				index[0] = 9;
 			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
 				index[0] = 10;
+			Draw_table2();
+		}
+		if (diag_mode == 6)
+		{
+			if (c > param1 *12.9 / 18 && c<param1 *14.9 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+				printable = true;
+			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				confirm = true;
+				Drawinput3(atoi(buff));
+				str = atoi(buff);
+			}
+			if (c > param1*13.6/18&&c<param1*14.95/18)
+					index[1] = 0;
+			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
+				index[0] = 0;
+			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
+				index[0] = 1;
+			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
+				index[0] = 2;
+			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
+				index[0] = 3;
+			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
+				index[0] = 4;
+			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
+				index[0] = 5;
+			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
+				index[0] = 6;
+			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
+				index[0] = 7;
+			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
+				index[0] = 8;
+			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
+				index[0] = 9;
+			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
+				index[0] = 10;
+			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
+					index[1] = 1;
+			Draw_table3();
 		}
 		if (diag_mode == 7)
 		{
@@ -396,6 +327,7 @@ void test(int a, int b, int c, int d) {
 				str = atoi(buff);
 	
 			}
+
 			if (c > param1*12.9 / 18 && c<param1*14.25 / 18)
 				index[1] = 0;
 			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1&&str<=11)
@@ -422,52 +354,9 @@ void test(int a, int b, int c, int d) {
 				index[0] = 10;
 			if (c > param1*14.25 / 18 && c<param1*15.65 / 18)
 					index[1] = 1;
-			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
 			if (c > param1*15.65 / 18 && c<param1*17. / 18)
 					index[1] = 2;
-			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
-				index[0] = 0;
-			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
-				index[0] = 1;
-			if (d<param2*8.3 / 18 && d>param2*7.3 / 18 && str >= 3 && str <= 11)
-				index[0] = 2;
-			if (d<param2*9.3 / 18 && d>param2*8.3 / 18 && str >= 4 && str <= 11)
-				index[0] = 3;
-			if (d<param2*10.3 / 18 && d>param2*9.3 / 18 && str >= 5 && str <= 11)
-				index[0] = 4;
-			if (d<param2*11.3 / 18 && d>param2*10.3 / 18 && str >= 6 && str <= 11)
-				index[0] = 5;
-			if (d<param2*12.3 / 18 && d>param2*11.3 / 18 && str >= 7 && str <= 11)
-				index[0] = 6;
-			if (d<param2*13.3 / 18 && d>param2*12.3 / 18 && str >= 8 && str <= 11)
-				index[0] = 7;
-			if (d<param2*14.3 / 18 && d>param2*13.3 / 18 && str >= 9 && str <= 11)
-				index[0] = 8;
-			if (d<param2*15.3 / 18 && d>param2*14.3 / 18 && str >= 10 && str <= 11)
-				index[0] = 9;
-			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
-				index[0] = 10;
+			Draw_table4();
 		}
 	}
 	renderScene();
@@ -479,16 +368,19 @@ void test(int a, int b, int c, int d) {
 	{
 		DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
 		Drawinput2(atoi(buff));
+		Draw_table2();
 	}
 	if (input_mode == 3)
 	{
 		DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
 		Drawinput3(atoi(buff));
+		Draw_table3();
 	}
 	if (input_mode == 4)
 	{
 		DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
 		Drawinput4(atoi(buff));
+		Draw_table4();
 	}
 	glutSwapBuffers();
 }
@@ -496,7 +388,7 @@ void test(int a, int b, int c, int d) {
 void input1(unsigned char key, int x, int y)
 {
 	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	confirm = false;
+	
 	glutSwapBuffers();
 	int len;
 	int n;
@@ -507,6 +399,7 @@ void input1(unsigned char key, int x, int y)
 	char k = key;
 		if (printable == true)
 		{
+			confirm = false;
 			if (k == 8)
 			{
 				len = strlen(buff);
@@ -522,7 +415,7 @@ void input1(unsigned char key, int x, int y)
 			}
 			clear_table();
 		}
-		//cout << index[0] << " " << index[1] << endl;
+		cout << index[0] << " " << index[1] << endl;
 		if (index[0] >= 0 && index[1] >= 0)
 		{
 			if (k == 8)
@@ -532,13 +425,12 @@ void input1(unsigned char key, int x, int y)
 				strcpy(table[index[0]][index[1]], "");
 				table[index[0]][index[1]] -= len - 1;
 			}
-			else
+			else if(k=='0'||k == '1'||k == '2'||k == '3'||k == '4'||k == '5'||k == '6'||k == '7'||k == '8'||k == '9'||k == '-'||k == '.')
 			{
 				char*test = &k;
-				if (strlen(table[index[0]][index[1]]) < 10)
+				if (strlen(table[index[0]][index[1]]) < 7)
 					strcat(table[index[0]][index[1]], test);
 			}
-			cout << table[index[0]][index[1]] << endl;
 		}
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	renderScene();
@@ -549,14 +441,17 @@ void input1(unsigned char key, int x, int y)
 	if (input_mode == 2)
 	{
 		DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
+		Draw_table2();
 	}
 	if (input_mode == 3)
 	{
 		DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
+		Draw_table3();
 	}
 	if (input_mode == 4)
 	{
 		DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
+		Draw_table4();
 	}
 	glutSwapBuffers();
 }

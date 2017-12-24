@@ -161,3 +161,31 @@ void Drawinput4(int num)
 	
 }
 
+void Draw_table2()
+{
+	if(str>0 && str<12)
+	for (int i = 0; i < str; i++)
+		DrawText(table[i][0], strlen(table[i][0]), param1*14.325 / 18, param2*12.05 / 18-i*param2*1./18, black);
+}
+void Draw_table3()
+{
+	if (str > 0&&str<12)
+	{
+		for (int i = 0; i < str; i++)
+			DrawText(table[i][0], strlen(table[i][0]), param1*13.65 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+		for (int i = 0; i < str; i++)
+			DrawText(table[i][1], strlen(table[i][1]), param1*15.0 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+	}
+}
+void Draw_table4()
+{
+	if (str > 0 && str<12)
+	{
+		for (int i = 0; i < str; i++)
+			DrawText(table[i][0], strlen(table[i][0]), param1*12.96 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+		for (int i = 0; i < str; i++)
+			DrawText(table[i][1], strlen(table[i][1]), param1*14.31 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+		for (int i = 0; i < str; i++)
+			DrawText(table[i][2], strlen(table[i][2]), param1*15.71 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+	}
+}

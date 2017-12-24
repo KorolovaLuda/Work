@@ -73,6 +73,20 @@ void drawmenu()
 void renderScene() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	drawmenu();
+	char*t;
+	glBegin(GL_POLYGON);
+	glColor3f(0.28, 0.75, 0.55); glVertex3f(-1 + (diag_mode-1)*2. / 9, 1, 0);
+	glColor3f(0.0, 0.3, 0.17); glVertex3f(-7. / 9 + (diag_mode - 1)*2. / 9, 1, 0);
+	glColor3f(0.0, 0.3, 0.17); glVertex3f(-7. / 9 + (diag_mode - 1)*2. / 9, 2. / 3, 0);
+	glColor3f(0.0, 0.3, 0.17); glVertex3f(-1 + (diag_mode - 1)*2. / 9, 2. / 3, 0);
+	glEnd();
+	glBegin(GL_LINE_LOOP);
+	glColor3f(0, 0, 0); glVertex3f(-1 + (diag_mode - 1)*2. / 9, 1, 0);
+	glColor3f(0, 0, 0); glVertex3f(-7. / 9 + (diag_mode - 1)*2. / 9, 1, 0);
+	glColor3f(0, 0, 0); glVertex3f(-7. / 9 + (diag_mode - 1)*2. / 9, 2. / 3, 0);
+	glColor3f(0, 0, 0); glVertex3f(-1 + (diag_mode - 1)*2. / 9, 2. / 3, 0);
+	glEnd();
+
 	if (input_mode == 1)
 	{
 		//	DrawText(buff, strlen(buff), param1 * 4.1 / 9., param2*6.67 / 9, black);
@@ -81,17 +95,29 @@ void renderScene() {
 		{
 			DrawText("Input funstion:", 15, param1 * 2.55 / 9., param2*6.7 / 9, black);
 			drow_button1();
+			t = "function";
+			DrawText(t, strlen(t), param1 / 90, 480, white);
+			t = "graph";
+			DrawText(t, strlen(t), param1 / 90, 450, white);
 		}
 		if (diag_mode == 7)
 		{
 			drawVenDiagram();
 			DrawText("Input set:", 10, param1 * 3 / 9., param2*6.7 / 9, black);
 			drow_button1();
+			t = "Venn";
+			DrawText(t, strlen(t), 61. * param1 / 90, 480, white);
+			t = "diagram";
+			DrawText(t, strlen(t), 61. * param1 / 90, 460, white);
 		}
 		if (diag_mode == 8)
 		{
 			DrawText("Input vector:", 13, param1 * 2.73 / 9., param2*6.7 / 9, black);
 			drow_button1();
+			t = "vector";
+			DrawText(t, strlen(t), 71. * param1 / 90, 480, white);
+			t = "diagram";
+			DrawText(t, strlen(t), 71. * param1 / 90, 460, white);
 		}
 	}
 	if (input_mode == 2)
@@ -99,24 +125,62 @@ void renderScene() {
 		//	DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
 		Draw_num();
 		drow_button2();
+		drow_button3();
 		Drawinput2(atoi(buff));
+		Draw_table2();
+		t = "pie";
+		DrawText(t, strlen(t), 41. * param1 / 90, 480, white);
+		t = "chart";
+		DrawText(t, strlen(t), 41. * param1 / 90, 460, white);
 	}
 	if (input_mode == 3)
 	{
 		//	DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
 		Draw_num();
 		drow_button2();
+		drow_button3();
 		if (strcmp(buff, "") != 0)
 		Drawinput3(atoi(buff));
+		Draw_table3();
+		if (diag_mode == 2)
+		{
+			t = "stakes";
+			DrawText(t, strlen(t), 11. * param1 / 90, 480, white);
+		}
+		if (diag_mode == 3)
+		{
+			t = "regions";
+			DrawText(t, strlen(t), 21. * param1 / 90, 480, white);
+		}
+		if (diag_mode == 4)
+		{
+			t = "points";
+			DrawText(t, strlen(t), 31. * param1 / 90, 480, white);
+		}
+		if (diag_mode == 6)
+		{
+			t = "radial";
+			DrawText(t, strlen(t), 51. * param1 / 90, 480, white);
+			t = "diagram";
+			DrawText(t, strlen(t), 51. * param1 / 90, 460, white);
+		}
 	}
 	if (input_mode == 4)
 	{
 		//	DrawText(buff, strlen(buff), param1 * 13. / 18., param2*6.67 / 9, black);
 		Draw_num();
 		drow_button2();
+		drow_button3();
 		if(strcmp(buff,"")!=0)
 		Drawinput4(atoi(buff));
+		Draw_table4();
+		t = "stock";
+		DrawText(t, strlen(t), 81. * param1 / 90, 480, white);
+		t = "chart";
+		DrawText(t, strlen(t), 81. * param1 / 90, 460, white);
 	}
+	for (int i = 0; i < 11; i++)
+		cout << table[i][0] << " " << table[i][1] << " " << table[i][2] << endl;
 	glutSwapBuffers();
 }
 
@@ -156,17 +220,17 @@ void drow_button2()
 void drow_button3()
 {
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.28, 0.48); glVertex3f(6. / 9, 4. / 9, 0);
-	glColor3f(0.0, 0.53, 0.86); glVertex3f(6. / 9, 5. / 9, 0);
-	glColor3f(0.0, 0.28, 0.48); glVertex3f(8. / 9, 5. / 9, 0);
-	glColor3f(0.0, 0.28, 0.48); glVertex3f(8. / 9, 4. / 9, 0);
+	glColor3f(0.0, 0.28, 0.48); glVertex3f(-3.75 / 9, 4. / 9, 0);
+	glColor3f(0.0, 0.53, 0.86); glVertex3f(-3.75 / 9, 5. / 9, 0);
+	glColor3f(0.0, 0.28, 0.48); glVertex3f(-1.75 / 9, 5. / 9, 0);
+	glColor3f(0.0, 0.28, 0.48); glVertex3f(-1.75 / 9, 4. / 9, 0);
 	glEnd();
 	glBegin(GL_LINE_LOOP);
-	glColor3f(0, 0, 0); glVertex3f(6. / 9, 4. / 9, 0);
-	glColor3f(0, 0, 0); glVertex3f(6. / 9, 5. / 9, 0);
-	glColor3f(0, 0, 0); glVertex3f(8. / 9, 5. / 9, 0);
-	glColor3f(0, 0, 0); glVertex3f(8. / 9, 4. / 9, 0);
+	glColor3f(0, 0, 0); glVertex3f(-3.75 / 9, 4. / 9, 0);
+	glColor3f(0, 0, 0); glVertex3f(-3.75 / 9, 5. / 9, 0);
+	glColor3f(0, 0, 0); glVertex3f(-1.75 / 9, 5. / 9, 0);
+	glColor3f(0, 0, 0); glVertex3f(-1.75 / 9, 4. / 9, 0);
 	glEnd();
-	DrawText("Confirm", 5, param1 * 15.35 / 18., param2*6.67 / 9, white);
+	DrawText("Build", 5, param1 * 5.79 / 18., param2*6.67 / 9, white);
 }
 

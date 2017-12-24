@@ -21,6 +21,7 @@ void allocate_table()
 }
 void clear_table()
 {
+	cout << "clear" << endl;
 	for (int i = 0; i < 11; i++)
 		for (int j = 0; j < 3; j++)
 			strcpy(table[i][j], "");
