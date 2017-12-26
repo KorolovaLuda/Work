@@ -389,7 +389,7 @@ void input1(unsigned char key, int x, int y)
 {
 	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
-	glutSwapBuffers();
+	//glutSwapBuffers();
 	int len;
 	int n;
 	if (input_mode == 1)
@@ -415,7 +415,7 @@ void input1(unsigned char key, int x, int y)
 			}
 			clear_table();
 		}
-		cout << index[0] << " " << index[1] << endl;
+		//cout << index[0] << " " << index[1] << endl;
 		if (index[0] >= 0 && index[1] >= 0)
 		{
 			if (k == 8)

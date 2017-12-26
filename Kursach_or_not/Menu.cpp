@@ -139,13 +139,14 @@ void renderScene() {
 		Draw_num();
 		drow_button2();
 		drow_button3();
-		if (strcmp(buff, "") != 0)
+	
 		Drawinput3(atoi(buff));
 		Draw_table3();
 		if (diag_mode == 2)
 		{
 			t = "stakes";
 			DrawText(t, strlen(t), 11. * param1 / 90, 480, white);
+
 		}
 		if (diag_mode == 3)
 		{
