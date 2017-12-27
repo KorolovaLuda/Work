@@ -99,6 +99,51 @@ void renderScene() {
 			DrawText(t, strlen(t), param1 / 90, 480, white);
 			t = "graph";
 			DrawText(t, strlen(t), param1 / 90, 450, white);
+			//background
+			glBegin(GL_POLYGON);
+			glColor3f(1, 1, 1); glVertex3f(-1.5 / 4,-7.5 / 9, 0);
+			glColor3f(1, 1, 1); glVertex3f(-1.5 / 4, 3. / 9, 0);
+			glColor3f(1, 1, 1); glVertex3f(1.5 / 4, 3. / 9, 0);
+			glColor3f(1, 1, 1); glVertex3f(1.5 / 4, -7.5 / 9, 0);
+			glEnd();
+			for(int i =0; i<20;i++)
+				for (int j = 0; j < 20; j++)
+				{
+					glBegin(GL_LINE_LOOP);
+					glColor3f(0.75, 0.75, 0.75); glVertex3f(-1.5 / 4 + 0.15*i/4, 3. / 9-0.525*(j+1)/9, 0);//лево низ
+					glColor3f(0.75, 0.75, 0.75); glVertex3f(-1.5 / 4+ 0.15*i/ 4, 3. / 9- 0.525*j / 9, 0);//лево верх
+					glColor3f(0.75, 0.75, 0.75); glVertex3f(-1.5 / 4+0.15*(1+i)/ 4, 3. / 9- 0.525*j / 9, 0);//право верх
+					glColor3f(0.75, 0.75, 0.75); glVertex3f(-1.5 / 4+ 0.15*(i + 1) / 4, 3. / 9- 0.525*(j+1) / 9, 0);//право низ
+					glEnd();
+				}
+			//оси
+			glBegin(GL_LINE_LOOP);
+			glColor3f(0,0, 0); glVertex3f(0, -7.5 / 9, 0);//низ
+			glColor3f(0, 0, 0); glVertex3f(0, 3. / 9, 0);//верх
+			glEnd();
+			glBegin(GL_LINE_LOOP);
+			glColor3f(0, 0, 0); glVertex3f(-1.5/4, -2.25/ 9, 0);//лево низ
+			glColor3f(0, 0, 0); glVertex3f(1.5/4, -2.25/ 9, 0);//лево верх
+			glEnd();
+			//стрелки
+			//сверху
+			glBegin(GL_LINE_LOOP);
+			glColor3f(0, 0, 0); glVertex3f(0.0375, 2.475 / 9, 0);//низ
+			glColor3f(0, 0, 0); glVertex3f(0, 3. / 9, 0);//верх
+			glEnd();
+			glBegin(GL_LINE_LOOP);
+			glColor3f(0, 0, 0); glVertex3f(-0.0375, 2.475 / 9, 0);//низ
+			glColor3f(0, 0, 0); glVertex3f(0, 3. / 9, 0);//верх
+			glEnd();
+			//справа
+			glBegin(GL_LINE_LOOP);
+			glColor3f(0, 0, 0); glVertex3f(1.35/4, -1.725 / 9, 0);//низ
+			glColor3f(0, 0, 0); glVertex3f(1.5/4, -2.25 / 9, 0);//верх
+			glEnd();
+			glBegin(GL_LINE_LOOP);
+			glColor3f(0, 0, 0); glVertex3f(1.35 / 4, -2.775 / 9, 0);//лево низ
+			glColor3f(0, 0, 0); glVertex3f(1.5/4, -2.25 / 9, 0);//лево верх
+			glEnd();
 		}
 		if (diag_mode == 7)
 		{
@@ -132,6 +177,17 @@ void renderScene() {
 		DrawText(t, strlen(t), 41. * param1 / 90, 480, white);
 		t = "chart";
 		DrawText(t, strlen(t), 41. * param1 / 90, 460, white);
+		if (start == true)
+		{
+			obj.set(table, str); 
+			start = false;
+			cout << "set done" << endl;
+		}
+		if (build == true)
+		{
+			obj.drow();
+			cout << "drow it" << endl;
+		}
 	}
 	if (input_mode == 3)
 	{
@@ -139,14 +195,13 @@ void renderScene() {
 		Draw_num();
 		drow_button2();
 		drow_button3();
-	
+		if (strcmp(buff, "") != 0)
 		Drawinput3(atoi(buff));
 		Draw_table3();
 		if (diag_mode == 2)
 		{
 			t = "stakes";
 			DrawText(t, strlen(t), 11. * param1 / 90, 480, white);
-
 		}
 		if (diag_mode == 3)
 		{
@@ -180,8 +235,6 @@ void renderScene() {
 		t = "chart";
 		DrawText(t, strlen(t), 81. * param1 / 90, 460, white);
 	}
-	for (int i = 0; i < 11; i++)
-		cout << table[i][0] << " " << table[i][1] << " " << table[i][2] << endl;
 	glutSwapBuffers();
 }
 

@@ -1,6 +1,7 @@
 #pragma once
 #include"Global_vars.h"
 #include"Input_output.h"
+#include"Pie_chart.h"
 extern char* buff;
 extern int input_mode;
 extern float param1, param2;
@@ -10,7 +11,8 @@ extern int str;
 extern bool printable;
 extern int diag_mode;
 extern bool build;
-extern bool confirm;
+extern bool confirm,start;
+extern pie obj;
 
 void drawmenu();
 void renderScene(void);

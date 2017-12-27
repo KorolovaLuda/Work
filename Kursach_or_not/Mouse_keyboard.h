@@ -2,6 +2,7 @@
 #include"Global_vars.h"
 #include"Input_output.h"
 #include"Menu.h"
+#include"Pie_chart.h"
 
 extern int index[2];
 extern char* buff;
@@ -12,7 +13,7 @@ extern float white[3];
 extern float black[3];
 extern int str;
 extern bool printable;
-extern bool confirm, build;
+extern bool confirm, build,start;
 extern int index[2];
 extern char*** table;
 

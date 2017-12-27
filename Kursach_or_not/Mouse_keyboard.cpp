@@ -153,6 +153,11 @@ void test(int a, int b, int c, int d) {
 			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
 				index[1] = 1;
 			Draw_table3();
+			//кнопка построить
+			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				///
+			}
 		}
 		if (diag_mode == 3)
 		{
@@ -191,6 +196,11 @@ void test(int a, int b, int c, int d) {
 			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
 					index[1] = 1;
 			Draw_table3();
+			//кнопка построить
+			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				///
+			}
 		}
 		if (diag_mode == 4)
 		{
@@ -229,6 +239,11 @@ void test(int a, int b, int c, int d) {
 			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
 					index[1] = 1;
 			Draw_table3();
+			//кнопка построить
+			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				///
+			}
 		}
 		if (diag_mode == 5)
 		{
@@ -267,6 +282,12 @@ void test(int a, int b, int c, int d) {
 			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
 				index[0] = 10;
 			Draw_table2();
+			//кнопка построить
+			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				start = true;
+				build = true;
+			}
 		}
 		if (diag_mode == 6)
 		{
@@ -305,6 +326,11 @@ void test(int a, int b, int c, int d) {
 			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
 					index[1] = 1;
 			Draw_table3();
+			//кнопка построить
+			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				///
+			}
 		}
 		if (diag_mode == 7)
 		{
@@ -357,6 +383,11 @@ void test(int a, int b, int c, int d) {
 			if (c > param1*15.65 / 18 && c<param1*17. / 18)
 					index[1] = 2;
 			Draw_table4();
+			//кнопка построить
+			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				///
+			}
 		}
 	}
 	renderScene();
@@ -389,7 +420,7 @@ void input1(unsigned char key, int x, int y)
 {
 	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
-	//glutSwapBuffers();
+	glutSwapBuffers();
 	int len;
 	int n;
 	if (input_mode == 1)
@@ -400,6 +431,7 @@ void input1(unsigned char key, int x, int y)
 		if (printable == true)
 		{
 			confirm = false;
+			build = false;
 			if (k == 8)
 			{
 				len = strlen(buff);
@@ -415,7 +447,6 @@ void input1(unsigned char key, int x, int y)
 			}
 			clear_table();
 		}
-		//cout << index[0] << " " << index[1] << endl;
 		if (index[0] >= 0 && index[1] >= 0)
 		{
 			if (k == 8)
