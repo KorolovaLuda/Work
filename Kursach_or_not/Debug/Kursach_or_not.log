@@ -1,4 +1,123 @@
-﻿  Mouse_keyboard.cpp
+﻿  Function.cpp
+  Main.cpp
+Main.cpp(24): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Main.cpp(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+Main.cpp(44): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Menu.cpp
+Menu.cpp(6): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(7): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(8): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(9): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(14): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(14): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(15): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(15): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(16): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(16): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(17): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(17): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(23): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(24): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(25): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(25): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(26): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(26): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(31): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(32): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(37): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(38): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(42): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+Menu.cpp(44): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+Menu.cpp(46): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(48): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(50): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(52): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(54): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(56): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(58): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(60): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(62): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(64): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(66): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(68): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(70): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(78): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(78): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(79): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(79): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(80): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(80): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(81): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(81): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(84): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(85): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(86): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(86): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(87): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(87): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(96): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(99): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+Menu.cpp(101): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+Menu.cpp(104): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(105): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(106): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(107): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(113): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(114): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(115): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(116): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Menu.cpp(121): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(122): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(131): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(132): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(135): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(136): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(140): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(144): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(162): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(165): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(167): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(183): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(186): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(188): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(202): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(204): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(218): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(223): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(225): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(240): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(245): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(258): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(260): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(268): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(269): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(270): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(271): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(274): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(275): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(276): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(277): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(279): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(285): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(286): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(287): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(288): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(291): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(292): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(293): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(294): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(296): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Menu.cpp(301): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(302): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(303): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(304): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(307): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(308): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(309): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(310): warning C4305: аргумент: усечение из "double" к "GLfloat"
+Menu.cpp(312): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  Mouse_keyboard.cpp
 Mouse_keyboard.cpp(21): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 Mouse_keyboard.cpp(32): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 Mouse_keyboard.cpp(45): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
@@ -8,10 +127,17 @@ Mouse_keyboard.cpp(85): warning C4244: аргумент: преобразова�
 Mouse_keyboard.cpp(101): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 Mouse_keyboard.cpp(113): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 Mouse_keyboard.cpp(127): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+<<<<<<< HEAD
 Mouse_keyboard.cpp(430): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 Mouse_keyboard.cpp(434): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 Mouse_keyboard.cpp(440): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 Mouse_keyboard.cpp(446): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+=======
+Mouse_keyboard.cpp(428): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(432): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(438): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(444): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+>>>>>>> origin/master
 Mouse_keyboard.cpp(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
 Mouse_keyboard.cpp(31): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -30,6 +156,7 @@ Mouse_keyboard.cpp(111): warning C4996: 'strcpy': This function or variable may 
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
 Mouse_keyboard.cpp(124): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+<<<<<<< HEAD
 Mouse_keyboard.cpp(482): warning C4018: <: несоответствие типов со знаком и без знака
 Mouse_keyboard.cpp(487): warning C4018: <: несоответствие типов со знаком и без знака
 Mouse_keyboard.cpp(513): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
@@ -46,6 +173,25 @@ Mouse_keyboard.cpp(499): warning C4996: 'strcpy': This function or variable may 
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
 Mouse_keyboard.cpp(506): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+=======
+Mouse_keyboard.cpp(480): warning C4018: <: несоответствие типов со знаком и без знака
+Mouse_keyboard.cpp(485): warning C4018: <: несоответствие типов со знаком и без знака
+Mouse_keyboard.cpp(511): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(515): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(520): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(525): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(471): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(481): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+Mouse_keyboard.cpp(486): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+Mouse_keyboard.cpp(497): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(504): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+  Создание кода...
+>>>>>>> origin/master
   Function.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
   Kursach_or_not.vcxproj -> C:\Users\Люда\Documents\Visual Studio 2015\Projects\Kursach_or_not\Debug\Kursach_or_not.exe
   Kursach_or_not.vcxproj -> C:\Users\Люда\Documents\Visual Studio 2015\Projects\Kursach_or_not\Debug\Kursach_or_not.pdb (Partial PDB)
