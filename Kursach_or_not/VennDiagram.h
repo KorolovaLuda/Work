@@ -6,4 +6,4 @@ class Venn
 	bool*crit;
 };
 
-void drawVenDiagram();
+//void drawVenDiagram();

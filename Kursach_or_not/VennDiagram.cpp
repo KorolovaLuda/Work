@@ -3,7 +3,7 @@
 #include<GL\freeglut.h>
 #include<iostream>
 
-void drawVenDiagram()
+/*void drawVenDiagram()
 {
 	glBegin(GL_POLYGON);
 	for (int i = -120; i <= 120; i++)
@@ -67,4 +67,4 @@ void drawVenDiagram()
 
 	glEnd();
 	//glutSwapBuffers();
-}
+}*/

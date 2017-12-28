@@ -147,13 +147,25 @@ void renderScene() {
 		}
 		if (diag_mode == 7)
 		{
-			drawVenDiagram();
+			//drawVenDiagram();
 			DrawText("Input set:", 10, param1 * 3 / 9., param2*6.7 / 9, black);
 			drow_button1();
 			t = "Venn";
 			DrawText(t, strlen(t), 61. * param1 / 90, 480, white);
 			t = "diagram";
 			DrawText(t, strlen(t), 61. * param1 / 90, 460, white);
+			if (start == true)
+			{
+				ob.set_set(buff);
+				ob.parse();
+				start = false;
+				cout << "set done" << endl;
+			}
+			if (build == true)
+			{
+				ob.drawVenDiagram();
+				cout << "drow it" << endl;
+			}
 		}
 		if (diag_mode == 8)
 		{
@@ -181,12 +193,10 @@ void renderScene() {
 		{
 			obj.set(table, str); 
 			start = false;
-			cout << "set done" << endl;
 		}
 		if (build == true)
 		{
 			obj.drow();
-			cout << "drow it" << endl;
 		}
 	}
 	if (input_mode == 3)

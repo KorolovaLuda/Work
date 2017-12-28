@@ -136,17 +136,21 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Mouse_keyboard.cpp" />
+    <ClCompile Include="My_list.cpp" />
     <ClCompile Include="Pie_chart.cpp" />
     <ClCompile Include="VennDiagram.cpp" />
+    <ClCompile Include="Venn_diagram.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Global_vars.h" />
     <ClInclude Include="Input_output.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Mouse_keyboard.h" />
+    <ClInclude Include="My_list.h" />
     <ClInclude Include="Pie_chart.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="VennDiagram.h" />
+    <ClInclude Include="Venn_diagram.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

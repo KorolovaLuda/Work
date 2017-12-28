@@ -2,6 +2,7 @@
 #include"Global_vars.h"
 #include"Input_output.h"
 #include"Pie_chart.h"
+#include"Venn_diagram.h"
 extern char* buff;
 extern int input_mode;
 extern float param1, param2;
@@ -13,6 +14,8 @@ extern int diag_mode;
 extern bool build;
 extern bool confirm,start;
 extern pie obj;
+extern Venn1 ob;
+
 
 void drawmenu();
 void renderScene(void);

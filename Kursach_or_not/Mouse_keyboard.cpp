@@ -81,7 +81,7 @@ void test(int a, int b, int c, int d) {
 			input_mode = 1; //ввод строки
 			diag_mode = 7;
 			strcpy(buff, "");
-			drawVenDiagram();
+			//drawVenDiagram();
 			Drawinput1();
 			drow_button1();
 			DrawText("Input set:", 10, param1 * 3 / 9., param2*6.7 / 9, black);
@@ -329,13 +329,20 @@ void test(int a, int b, int c, int d) {
 			//кнопка построить
 			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
 			{
-				///
+				start = true;
+				build = true;
 			}
 		}
 		if (diag_mode == 7)
 		{
 			if (c > param1 *4. / 9 && c<param1 *7. / 9 && d>param2 *2. / 9 && d < param2 *5. / 18)
 				printable = true;
+			//кнопка построить
+			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
+			{
+				start = true;
+				build = true;
+			}
 		}
 		if (diag_mode == 8)
 		{
@@ -442,8 +449,17 @@ void input1(unsigned char key, int x, int y)
 			else
 			{
 				char*test = &k;
-				if (strlen(buff) < n)
-					strcat(buff, test);
+				if (diag_mode == 7)
+				{
+					if (k == 'A' || k == 'a' || k == 'B' || k == 'b' || k == 'C' || k == 'c' || k == 'U' || k == 'u' || k == '+' || k == '-' || k == '*' || k == '/' || k == '^')
+						if (strlen(buff) < n)
+							strcat(buff, test);
+				}
+				else
+				{
+					if (strlen(buff) < n)
+						strcat(buff, test);
+				}
 			}
 			clear_table();
 		}

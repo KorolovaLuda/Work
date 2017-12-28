@@ -3,6 +3,7 @@
 #include"Input_output.h"
 #include"Menu.h"
 #include"Pie_chart.h"
+#include"Venn_diagram.h"
 
 extern int index[2];
 extern char* buff;
