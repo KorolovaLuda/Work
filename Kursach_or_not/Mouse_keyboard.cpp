@@ -10,6 +10,8 @@ void test(int a, int b, int c, int d) {
 		printable = false;
 		if (c > 0 && c < param1 / 9.&&d>0 && d < param2 / 6.)
 		{
+			start = false;
+			build = false;
 			//график функции
 			input_mode = 1; //ввод строки
 			diag_mode = 1;
@@ -22,7 +24,9 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 / 9. && c < param1 * 2 / 9.&&d>0 && d < param2 / 6.)
 		{
 			//столбики
-			input_mode = 3; //ввод 2 столбцов
+			start = false;
+			build = false;
+			input_mode = 2; //ввод 1 столбцов
 			diag_mode = 2;
 			strcpy(buff, "");
 			DrawText("Input cuantity of strings:", 27, param1 * 5.1 / 9., param2*6.7 / 9, black);
@@ -33,6 +37,8 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 * 2 / 9. && c < param1 * 3 / 9.&&d>0 && d < param2 / 6.)
 		{
 			//области
+			start = false;
+			build = false;
 			input_mode = 3; //ввод 2 столбцов
 			diag_mode = 3;
 			strcpy(buff, "");
@@ -45,6 +51,8 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 * 3 / 9. && c < param1 * 4 / 9.&&d>0 && d < param2 / 6.)
 		{
 			//точки
+			start = false;
+			build = false;
 			input_mode = 3; //ввод 2 столбцов
 			diag_mode = 4;
 			strcpy(buff, "");
@@ -56,6 +64,8 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 * 4 / 9. && c < param1 * 5 / 9.&&d>0 && d < param2 / 6.)
 		{
 			//круговая диаграма
+			start = false;
+			build = false;
 			input_mode = 2; //ввод 1 столбца
 			diag_mode = 5;
 			strcpy(buff, "");
@@ -67,6 +77,8 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 * 5 / 9. && c < param1 * 6 / 9.&&d>0 && d < param2 / 6.)
 		{
 			//радиальная диаграма
+			start = false;
+			build = false;
 			input_mode = 3; //ввод 2 столбцов
 			strcpy(buff, "");
 			diag_mode = 6;
@@ -78,6 +90,8 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 * 6 / 9. && c < param1 * 7 / 9.&&d>0 && d < param2 / 6.)
 		{
 			//диаграма Вена
+			start = false;
+			build = false;
 			input_mode = 1; //ввод строки
 			diag_mode = 7;
 			strcpy(buff, "");
@@ -90,6 +104,8 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 * 7 / 9. && c < param1 * 8 / 9.&&d>0 && d < param2 / 6.)
 		{
 			//векторная диаграма
+			start = false;
+			build = false;
 			input_mode = 1; //ввод строки
 			diag_mode = 8;
 			strcpy(buff, "");
@@ -101,6 +117,8 @@ void test(int a, int b, int c, int d) {
 		if (c > param1 * 8 / 9. && c < param1 &&d>0 && d < param2 / 6.)
 		{
 			//биржевые диаграмы
+			start = false;
+			build = false;
 			input_mode = 4; //ввод 3 столбцов
 			diag_mode = 9;
 			strcpy(buff, "");
@@ -123,7 +141,7 @@ void test(int a, int b, int c, int d) {
 			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
 			{
 				confirm = true;
-				Drawinput3(atoi(buff));
+				Drawinput2(atoi(buff));
 				str = atoi(buff);
 			}
 			if (c > param1*13.6 / 18 && c<param1*14.95 / 18)
@@ -152,7 +170,7 @@ void test(int a, int b, int c, int d) {
 				index[0] = 10;
 			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
 				index[1] = 1;
-			Draw_table3();
+			Draw_table2();
 			//кнопка построить
 			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
 			{

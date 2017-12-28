@@ -7,31 +7,8 @@ pie::pie()
 		tab = NULL;
 		n = 0;
 }
-bool pie::num_check(char*str)
-{
-	int len = strlen(str);
-	if (str[0] == '.'||str[0]=='-')
-		return false;
-	int count=0;
-	for (int i = 1; i < len; i++)
-	{
-		if (str[i] == '.')
-			count++;
-		if (str[i] == '-')
-			return false;
-	}
-	if (count > 1)
-		return false;
-	return true;
-}
-bool pie::empty_check(char*str)
-{
-	if (strcmp(str, "") == 0)
-		return false;
-	else
-		return true;
-}
-void pie::drow()
+
+void pie::draw()
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -104,7 +81,6 @@ void pie::set(char***mas, int num)
 	}
 }
 
-pie::~pie()
-{
+/*pie::~pie() {
 	delete[] tab;
-}
+}*/

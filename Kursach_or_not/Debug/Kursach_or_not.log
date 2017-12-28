@@ -1,51 +1,51 @@
 ﻿  Mouse_keyboard.cpp
-Mouse_keyboard.cpp(19): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(28): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(39): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(51): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(62): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(73): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(87): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(97): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(109): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(403): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(407): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(413): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(419): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(21): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(32): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(45): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(59): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(72): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(85): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(101): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(113): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(127): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(421): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(425): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(431): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(437): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(27): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(31): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(44): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(50): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(58): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
 Mouse_keyboard.cpp(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
 Mouse_keyboard.cpp(83): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(95): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(97): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(106): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(111): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(455): warning C4018: <: несоответствие типов со знаком и без знака
-Mouse_keyboard.cpp(460): warning C4018: <: несоответствие типов со знаком и без знака
-Mouse_keyboard.cpp(486): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(490): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(495): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(500): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-Mouse_keyboard.cpp(446): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(124): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Mouse_keyboard.cpp(456): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(473): warning C4018: <: несоответствие типов со знаком и без знака
+Mouse_keyboard.cpp(478): warning C4018: <: несоответствие типов со знаком и без знака
+Mouse_keyboard.cpp(504): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(508): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(513): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(518): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(464): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(474): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
-Mouse_keyboard.cpp(461): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
-Mouse_keyboard.cpp(472): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
 Mouse_keyboard.cpp(479): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+Mouse_keyboard.cpp(490): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(497): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
   Global_vars.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
-  Kursach_or_not.vcxproj -> C:\Users\Люда\Documents\Visual Studio 2015\Projects\Kursach_or_not\Debug\Kursach_or_not.exe
-  Kursach_or_not.vcxproj -> C:\Users\Люда\Documents\Visual Studio 2015\Projects\Kursach_or_not\Debug\Kursach_or_not.pdb (Partial PDB)
+  Kursach_or_not.vcxproj -> C:\Users\Администратор\Documents\Proga\Kursach\Code\Debug\Kursach_or_not.exe
+  Kursach_or_not.vcxproj -> C:\Users\Администратор\Documents\Proga\Kursach\Code\Debug\Kursach_or_not.pdb (Partial PDB)

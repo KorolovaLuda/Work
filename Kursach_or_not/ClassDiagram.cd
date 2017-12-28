@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="strange_stack" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAIAACAAAAAAAAAAcAAIAAAA=</HashCode>
+      <FileName>My_list.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="strange_stack2" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAIAACAAAAAAAAAAYAAIQAAA=</HashCode>
+      <FileName>My_list.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pie" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAgAYEAAAAAAAAAAAAEgAAAAAAAAA=</HashCode>
+      <FileName>Pie_chart.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Venn1" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAABAIAASgBAAAQAAAAAUAAAAAAAAAIAAAIAA=</HashCode>
+      <FileName>Venn_diagram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -185,18 +185,26 @@ void renderScene() {
 		drow_button3();
 		Drawinput2(atoi(buff));
 		Draw_table2();
-		t = "pie";
-		DrawText(t, strlen(t), 41. * param1 / 90, 480, white);
-		t = "chart";
-		DrawText(t, strlen(t), 41. * param1 / 90, 460, white);
-		if (start == true)
+		if (diag_mode == 5)
 		{
-			obj.set(table, str); 
-			start = false;
+			t = "pie";
+			DrawText(t, strlen(t), 41. * param1 / 90, 480, white);
+			t = "chart";
+			DrawText(t, strlen(t), 41. * param1 / 90, 460, white);
+			if (start == true)
+			{
+				obj.set(table, str);
+				start = false;
+			}
+			if (build == true)
+			{
+				obj.draw();
+			}
 		}
-		if (build == true)
+		if (diag_mode == 2)
 		{
-			obj.drow();
+			t = "stakes";
+			DrawText(t, strlen(t), 11. * param1 / 90, 480, white);
 		}
 	}
 	if (input_mode == 3)
@@ -208,11 +216,6 @@ void renderScene() {
 		if (strcmp(buff, "") != 0)
 		Drawinput3(atoi(buff));
 		Draw_table3();
-		if (diag_mode == 2)
-		{
-			t = "stakes";
-			DrawText(t, strlen(t), 11. * param1 / 90, 480, white);
-		}
 		if (diag_mode == 3)
 		{
 			t = "regions";

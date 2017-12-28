@@ -93,11 +93,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\OPJL\freeglut\include;C:\OPJL\glew-1.11.0\include;C:\OPJL\SOIL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\glew-1.11.0\include;C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\freeglut\include;C:\OPJL\SOIL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\OPJL\freeglut\lib;C:\OPJL\glew-1.11.0\lib;C:\OPJL\SOIL\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\freeglut\lib;C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\glew-1.11.0\lib;C:\OPJL\SOIL\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -114,11 +114,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\OPJL\freeglut\include;C:\OPJL\glew-1.11.0\include;C:\OPJL\SOIL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\glew-1.11.0\include;C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\freeglut\include;C:\OPJL\SOIL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\OPJL\freeglut\lib;C:\OPJL\glew-1.11.0\lib;C:\OPJL\SOIL\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\freeglut\lib;C:\Users\Администратор\Documents\Proga\Kursach\Glew and Glut\glew-1.11.0\lib;C:\OPJL\SOIL\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -137,7 +137,9 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Mouse_keyboard.cpp" />
     <ClCompile Include="My_list.cpp" />
+    <ClCompile Include="oneSell.cpp" />
     <ClCompile Include="Pie_chart.cpp" />
+    <ClCompile Include="stakes.cpp" />
     <ClCompile Include="Venn_diagram.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -146,9 +148,14 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Mouse_keyboard.h" />
     <ClInclude Include="My_list.h" />
+    <ClInclude Include="oneSell.h" />
     <ClInclude Include="Pie_chart.h" />
+    <ClInclude Include="stakes.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="Venn_diagram.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
