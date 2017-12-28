@@ -79,7 +79,7 @@ void test(int a, int b, int c, int d) {
 			//радиальная диаграма
 			start = false;
 			build = false;
-			input_mode = 3; //ввод 2 столбцов
+			input_mode = 2; //ввод 2 столбцов
 			strcpy(buff, "");
 			diag_mode = 6;
 			DrawText("Input cuantity of strings:", 27, param1 * 5.1 / 9., param2*6.7 / 9, black);
@@ -119,7 +119,7 @@ void test(int a, int b, int c, int d) {
 			//биржевые диаграмы
 			start = false;
 			build = false;
-			input_mode = 4; //ввод 3 столбцов
+			input_mode = 4; //ввод 4 столбцов
 			diag_mode = 9;
 			strcpy(buff, "");
 			Draw_num();
@@ -144,7 +144,9 @@ void test(int a, int b, int c, int d) {
 				Drawinput2(atoi(buff));
 				str = atoi(buff);
 			}
-			if (c > param1*13.6 / 18 && c<param1*14.95 / 18)
+			if (c > param1*14.275 / 18 && c<param1*15.625 / 18)
+				index[1] = 0;
+			if (c > param1*12.9 / 18 && c<param1*14.25 / 18)
 				index[1] = 0;
 			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
 				index[0] = 0;
@@ -168,13 +170,12 @@ void test(int a, int b, int c, int d) {
 				index[0] = 9;
 			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
 				index[0] = 10;
-			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
-				index[1] = 1;
 			Draw_table2();
 			//кнопка построить
 			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
 			{
-				///
+				start = true;
+				build = true;
 			}
 		}
 		if (diag_mode == 3)
@@ -230,8 +231,14 @@ void test(int a, int b, int c, int d) {
 				Drawinput3(atoi(buff));
 				str = atoi(buff);
 			}
-			if (c > param1*13.6/18&&c<param1*14.95/18)
-					index[1] = 0;
+			if (c > param1*12.25 / 18 && c<param1*14.95 / 18)
+				index[1] = 0;
+			if (c > param1*13.6 / 18 && c<param1*14.95 / 18)
+				index[1] = 1;
+			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
+				index[1] = 2;
+			if (c > param1*16.3 / 18 && c<param1*17.65 / 18)
+				index[1] = 3;
 			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
 				index[0] = 0;
 			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
@@ -314,11 +321,13 @@ void test(int a, int b, int c, int d) {
 			if (c > param1 *15. / 18 && c<param1 *17. / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
 			{
 				confirm = true;
-				Drawinput3(atoi(buff));
+				Drawinput2(atoi(buff));
 				str = atoi(buff);
 			}
-			if (c > param1*13.6/18&&c<param1*14.95/18)
-					index[1] = 0;
+			if (c > param1*14.275 / 18 && c<param1*15.625 / 18)
+				index[1] = 0;
+			if (c > param1*12.9 / 18 && c<param1*14.25 / 18)
+				index[1] = 0;
 			if (d<param2*6.3 / 18 && d>param2*5.3 / 18 && str >= 1 && str <= 11)
 				index[0] = 0;
 			if (d<param2*7.3 / 18 && d>param2*6.3 / 18 && str >= 2 && str <= 11)
@@ -341,9 +350,7 @@ void test(int a, int b, int c, int d) {
 				index[0] = 9;
 			if (d<param2*16.3 / 18 && d>param2*15.3 / 18 && str == 11)
 				index[0] = 10;
-			if (c > param1*14.95 / 18 && c<param1*16.3 / 18)
-					index[1] = 1;
-			Draw_table3();
+			Draw_table2();
 			//кнопка построить
 			if (c > param1 *5.25 / 18 && c<param1 *7.25 / 18 && d>param2 *2. / 9 && d < param2 *5. / 18)
 			{
