@@ -446,6 +446,28 @@ void Venn1::set_set(char*str)
 
 void Venn1::drawVenDiagram()
 {
+	glBegin(GL_POLYGON);
+	if (result[0] == true)
+	{
+		glColor3f(0, 0.58, 0.83); glVertex3f(-3. / 10 + 1. / 4, -1. / 9 + 3. / 10, 0);
+		glColor3f(0, 0.58, 0.83); glVertex3f(3. / 10 + 1. / 4, -1. / 9 + 3. / 10, 0);
+		glColor3f(0, 0.58, 0.83); glVertex3f(3. / 10 + 1. / 4, -1. / 9 - 5. / 10, 0);
+		glColor3f(0, 0.58, 0.83); glVertex3f(-3. / 10 + 1. / 4, -1. / 9 - 5. / 10, 0);
+	}
+	else
+	{
+		glColor3f(1, 1, 1); glVertex3f(-3. / 10 + 1. / 4, -1. / 9 + 3. / 10, 0);
+		glColor3f(1, 1, 1); glVertex3f(3. / 10 + 1. / 4, -1. / 9 + 3. / 10, 0);
+		glColor3f(1, 1, 1); glVertex3f(3. / 10 + 1. / 4, -1. / 9 - 5. / 10, 0);
+		glColor3f(1, 1, 1); glVertex3f(-3. / 10 + 1. / 4, -1. / 9 - 5. / 10, 0);
+	}
+	glEnd();
+	glBegin(GL_LINE_LOOP);
+	glColor3f(0, 0, 0); glVertex3f(-3. / 10 + 1. / 4, -1. / 9 + 3. / 10, 0);
+	glColor3f(0, 0, 0); glVertex3f(3. / 10 + 1. / 4, -1. / 9 + 3. / 10, 0);
+	glColor3f(0, 0, 0); glVertex3f(3. / 10 + 1. / 4, -1. / 9 - 5. / 10, 0);
+	glColor3f(0, 0, 0); glVertex3f(-3. / 10 + 1. / 4, -1. / 9 - 5. / 10, 0);
+	glEnd();
 	if (n_set == 1)
 	{
 		glBegin(GL_POLYGON);
@@ -453,18 +475,18 @@ void Venn1::drawVenDiagram()
 		{
 			if (result[1] == true)
 			{
-				glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 )*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 )*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 			else
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 )*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 )*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 		}
 		glEnd();
 		glBegin(GL_LINE_LOOP);
 		for (int i = 0; i <= 360; i++)
 		{
-			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 		}
 		glEnd();
 	}
@@ -474,21 +496,21 @@ void Venn1::drawVenDiagram()
 		for (int i = -120; i <= 120; i++)
 		{
 			if(result[1]==true)
-			{glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2/param1+ 1. / 4, (sin(i*3.14 / 180) / 5)-1./9, 0);}
+			{glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2/param1+ 1. / 4, (sin(i*3.14 / 180) / 5)-2./9, 0);}
 			else
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 		}
 		for (int i = 60; i >= -60; i--)
 		{
 			if (result[1] == true)
 			{
-				glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 			else
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 		}
 		glEnd();
@@ -497,22 +519,22 @@ void Venn1::drawVenDiagram()
 		{
 			if (result[3] == true)
 			{
-				glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 			else
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 		}
 		for (int i = 60; i <= 300; i++)
 		{
 			if (result[3] == true)
 			{
-				glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 			else
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 		}
 		glEnd();
@@ -521,53 +543,53 @@ void Venn1::drawVenDiagram()
 		{
 			if (result[2] == true)
 			{
-				glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 			else
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 		}
 		for (int i = 120; i <= 240; i++)
 		{
 			if (result[2] == true)
 			{
-				glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 			else
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 			}
 		}
 		glEnd();
 		glBegin(GL_LINE_LOOP);
 		for (int i = -120; i <= 120; i++)
 		{
-			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 		}
 		for (int i = 60; i >= -60; i--)
 		{
-			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 		}
 		glEnd();
 		glBegin(GL_LINE_LOOP);
 		for (int i = 240; i >= 120; i--)
 		{
-			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 		}
 		for (int i = 60; i <= 300; i++)
 		{
-			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 		}
 		glEnd();
 		glBegin(GL_LINE_LOOP);
 		for (int i = -60; i <= 60; i++)
 		{
-			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos((360 / 2)*3.14 / 180) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 		}
 		for (int i = 120; i <= 240; i++)
 		{
-			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f((cos(i*3.14 / 180) / 5 + cos(0) / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 2. / 9, 0);
 		}
 
 		glEnd();
@@ -579,7 +601,7 @@ void Venn1::drawVenDiagram()
 		{
 			if (result[1] == true)
 			{
-				glColor3f(0, 0.38, 0.54); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
 			}
 			else
 			{
@@ -590,22 +612,22 @@ void Venn1::drawVenDiagram()
 		{
 			if (result[1] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
 			}
 		}
 		for (float i = 120; i <= 180; i+=0.5)
 		{
 			if (result[1] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
 			}
 		}
 		glEnd();
@@ -613,127 +635,211 @@ void Venn1::drawVenDiagram()
 		
 		for (float i = 0; i <= 60; i+=0.5)//
 		{
-			if (result[1] == true)
+			if (result[3] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
 			}
 		}
 		for (float i = 120; i >= -60; i -= 0.5)//
 		{
-			if (result[1] == true)
+			if (result[3] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
 			}
 		}
 		for (float i = 0; i <= 60; i += 0.5)
 		{
-			if (result[1] == true)
+			if (result[3] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
 			}
 		}
 		glEnd();
 		glBegin(GL_POLYGON);
 		for (float i = -120; i <= -60; i += 0.5)//
 		{
-			if (result[1] == true)
+			if (result[5] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
 			}
 		}
 		for (float i = 240; i <= 300; i += 0.5)//
 		{
-			if (result[1] == true)
+			if (result[5] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
 			}
 		}
 		for (float i = 0; i >=-180; i -= 0.5)
 		{
-			if (result[1] == true)
+			if (result[5] == true)
 			{
-				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
 			}
 			else
 			{
-
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
 			}
 		}
 		glEnd();
 		glBegin(GL_POLYGON);
 		for (float i = -120; i <= -60; i += 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			if (result[6] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
 		}
 		for (float i = 240; i >= 180; i -= 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			if (result[6] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
 		}
 		for (float i = 120; i <= 180; i += 0.5)
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			if (result[6] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
 		}
 		glEnd();
 		glBegin(GL_POLYGON);
 		for (float i = 0; i <= 60; i += 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			if (result[2] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
 		}
 		for (float i = 120; i <= 180; i += 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			if (result[2] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
 		}
 		for (float i = 120; i >= 60; i -= 0.5)
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			if (result[2] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
 		}
 		glEnd();
 		glBegin(GL_POLYGON);
 		for (float i = 0; i >= -60; i -= 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			if (result[4] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
 		}
 		for (float i = 240; i <= 300; i += 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			if (result[4] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
 		}
 		for (float i = 0; i <= 60; i += 0.5)
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			if (result[4] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
 		}
 		glEnd();
 		glBegin(GL_POLYGON);
 		for (float i = 0; i >= -60; i -= 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			if (result[7] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 - 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//левый
+			}
 		}
 		for (float i = 240; i >= 180; i -= 0.5)//
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			if (result[7] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5 + 1. / 10)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5) - 1. / 9, 0);//правый
+			}
 		}
 		for (float i = 120; i >= 60; i -= 0.5)
 		{
-			glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			if (result[7] == true)
+			{
+				glColor3f(0, 0.58, 0.83); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
+			else
+			{
+				glColor3f(1, 1, 1); glVertex3f((cos(i*3.14 / 180) / 5)*param2 / param1 + 1. / 4, (sin(i*3.14 / 180) / 5 - tan(pi / 3) / 10) - 1. / 9, 0);//низ
+			}
 		}
 		glEnd();
 

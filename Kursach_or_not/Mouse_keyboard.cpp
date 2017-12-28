@@ -451,7 +451,7 @@ void input1(unsigned char key, int x, int y)
 				char*test = &k;
 				if (diag_mode == 7)
 				{
-					if (k == 'A' || k == 'a' || k == 'B' || k == 'b' || k == 'C' || k == 'c' || k == 'U' || k == 'u' || k == '+' || k == '-' || k == '*' || k == '/' || k == '^')
+					if (k == 'A' || k == 'a' || k == 'B' || k == 'b' || k == 'C' || k == 'c' || k == 'U' || k == 'u' || k == '+' || k == '-' || k == '*' || k == '/' || k == '^' || k == '(' || k == ')')
 						if (strlen(buff) < n)
 							strcat(buff, test);
 				}

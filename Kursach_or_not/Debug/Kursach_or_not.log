@@ -1,106 +1,51 @@
-﻿  Venn_diagram.cpp
-Venn_diagram.cpp(77): warning C4018: <: несоответствие типов со знаком и без знака
-Venn_diagram.cpp(286): warning C4244: инициализация: преобразование "double" в "unsigned int", возможна потеря данных
-Venn_diagram.cpp(291): warning C4018: <: несоответствие типов со знаком и без знака
-Venn_diagram.cpp(302): warning C4018: <: несоответствие типов со знаком и без знака
-Venn_diagram.cpp(338): warning C4018: <: несоответствие типов со знаком и без знака
-Venn_diagram.cpp(82): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  Mouse_keyboard.cpp
+Mouse_keyboard.cpp(19): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(28): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(39): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(51): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(62): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(73): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(87): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(97): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(109): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(403): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(407): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(413): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(419): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Venn_diagram.cpp(84): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(27): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Venn_diagram.cpp(112): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(118): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(127): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(133): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(142): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(148): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(157): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(163): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(172): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(178): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1316): note:  см. объявление "itoa"
-Venn_diagram.cpp(444): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Mouse_keyboard.cpp(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
-Venn_diagram.cpp(456): warning C4305: аргумент: усечение из "double" к "GLfloat"
-Venn_diagram.cpp(456): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(460): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(467): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(477): warning C4305: аргумент: усечение из "double" к "GLfloat"
-Venn_diagram.cpp(477): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(480): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(487): warning C4305: аргумент: усечение из "double" к "GLfloat"
-Venn_diagram.cpp(487): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(491): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(500): warning C4305: аргумент: усечение из "double" к "GLfloat"
-Venn_diagram.cpp(500): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(504): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(511): warning C4305: аргумент: усечение из "double" к "GLfloat"
-Venn_diagram.cpp(511): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(515): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(524): warning C4305: аргумент: усечение из "double" к "GLfloat"
-Venn_diagram.cpp(524): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(528): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(535): warning C4305: аргумент: усечение из "double" к "GLfloat"
-Venn_diagram.cpp(535): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(539): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(546): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(550): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(556): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(560): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(566): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(570): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(582): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(586): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(591): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(595): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(602): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(606): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(610): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(616): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(620): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(624): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(630): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(634): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(638): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(644): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(648): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(652): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(658): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(662): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(666): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(672): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(676): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(680): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(689): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(693): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(697): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(704): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(708): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(712): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(718): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(722): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(726): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(732): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(736): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(740): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(746): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(750): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(754): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(760): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(764): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(768): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(774): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(778): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
-Venn_diagram.cpp(782): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+Mouse_keyboard.cpp(50): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(83): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(95): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(106): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(455): warning C4018: <: несоответствие типов со знаком и без знака
+Mouse_keyboard.cpp(460): warning C4018: <: несоответствие типов со знаком и без знака
+Mouse_keyboard.cpp(486): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(490): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(495): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(500): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+Mouse_keyboard.cpp(446): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(456): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+Mouse_keyboard.cpp(461): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
+Mouse_keyboard.cpp(472): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+Mouse_keyboard.cpp(479): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note:  см. объявление "strcat"
   Global_vars.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
   Kursach_or_not.vcxproj -> C:\Users\Люда\Documents\Visual Studio 2015\Projects\Kursach_or_not\Debug\Kursach_or_not.exe
   Kursach_or_not.vcxproj -> C:\Users\Люда\Documents\Visual Studio 2015\Projects\Kursach_or_not\Debug\Kursach_or_not.pdb (Partial PDB)
