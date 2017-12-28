@@ -27,14 +27,14 @@ void allocate_table()
 {
 	table = new char**[11];
 	for (int i = 0; i < 11; i++)
-		table[i] = new char*[3];
+		table[i] = new char*[4];
 	for (int i = 0; i < 11; i++)
-		for (int j = 0; j < 3; j++)
+		for (int j = 0; j < 4; j++)
 			table[i][j] = new char[10];
 }
 void clear_table()
 {
 	for (int i = 0; i < 11; i++)
-		for (int j = 0; j < 3; j++)
+		for (int j = 0; j < 4; j++)
 			strcpy(table[i][j], "");
 }

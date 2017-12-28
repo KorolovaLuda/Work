@@ -144,6 +144,17 @@ void renderScene() {
 			glColor3f(0, 0, 0); glVertex3f(1.35 / 4, -2.775 / 9, 0);//лево низ
 			glColor3f(0, 0, 0); glVertex3f(1.5/4, -2.25 / 9, 0);//лево верх
 			glEnd();
+			if (start == true)
+			{
+				f.set(buff);
+				start = false;
+				cout << "set done" << endl;
+			}
+			if (build == true)
+			{
+				f.drow();
+				cout << "drow it" << endl;
+			}
 		}
 		if (diag_mode == 7)
 		{
@@ -206,6 +217,13 @@ void renderScene() {
 			t = "stakes";
 			DrawText(t, strlen(t), 11. * param1 / 90, 480, white);
 		}
+		if (diag_mode == 6)
+		{
+			t = "radial";
+			DrawText(t, strlen(t), 51. * param1 / 90, 480, white);
+			t = "diagram";
+			DrawText(t, strlen(t), 51. * param1 / 90, 460, white);
+		}
 	}
 	if (input_mode == 3)
 	{
@@ -225,13 +243,6 @@ void renderScene() {
 		{
 			t = "points";
 			DrawText(t, strlen(t), 31. * param1 / 90, 480, white);
-		}
-		if (diag_mode == 6)
-		{
-			t = "radial";
-			DrawText(t, strlen(t), 51. * param1 / 90, 480, white);
-			t = "diagram";
-			DrawText(t, strlen(t), 51. * param1 / 90, 460, white);
 		}
 	}
 	if (input_mode == 4)
