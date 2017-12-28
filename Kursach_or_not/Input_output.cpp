@@ -120,45 +120,52 @@ void Drawinput3(int num)
 }
 void Drawinput4(int num)
 {
-	if (num > 0 && num<=11&&confirm==true)
+	if (num > 0 && num <= 11 && confirm == true)
 	{
 		glBegin(GL_POLYGON);
-		glColor3f(1, 1, 1); glVertex3f(3.9 / 9, 3.7 / 9 - num*1. / 9, 0);
-		glColor3f(1, 1, 1); glVertex3f(3.9 / 9, 3.7 / 9, 0);
-		glColor3f(1, 1, 1); glVertex3f(8. / 9, 3.7 / 9, 0);
-		glColor3f(1, 1, 1); glVertex3f(8. / 9, 3.7 / 9 - num*1. / 9, 0);
+		glColor3f(1, 1, 1); glVertex3f(3.25 / 9, 3.7 / 9 - num*1. / 9, 0);
+		glColor3f(1, 1, 1); glVertex3f(3.25 / 9, 3.7 / 9, 0);
+		glColor3f(1, 1, 1); glVertex3f(8.65 / 9, 3.7 / 9, 0);
+		glColor3f(1, 1, 1); glVertex3f(8.65 / 9, 3.7 / 9 - num*1. / 9, 0);
 		glEnd();
 		glBegin(GL_LINE_LOOP);
-		glColor3f(0, 0, 0); glVertex3f(3.9 / 9, 3.7 / 9 - num*1. / 9, 0);
-		glColor3f(0, 0, 0); glVertex3f(3.9 / 9, 3.7 / 9, 0);
-		glColor3f(0, 0, 0); glVertex3f(8. / 9, 3.7 / 9, 0);
-		glColor3f(0, 0, 0); glVertex3f(8. / 9, 3.7 / 9 - num*1. / 9, 0);
+		glColor3f(0, 0, 0); glVertex3f(4.6 / 9, 3.7 / 9 - num*1. / 9, 0);
+		glColor3f(0, 0, 0); glVertex3f(4.6 / 9, 3.7 / 9, 0);
+		glColor3f(0, 0, 0); glVertex3f(7.3 / 9, 3.7 / 9, 0);
+		glColor3f(0, 0, 0); glVertex3f(7.3 / 9, 3.7 / 9 - num*1. / 9, 0);
 		glEnd();
 		DrawText("Input cuantity of strings:", 27, param1 * 4.05 / 9., param2*6.7 / 9, black);
 		for (int i = 0; i < num; i++)
 		{
 			glBegin(GL_LINE_LOOP);
-			glColor3f(0, 0, 0); glVertex3f(3.9 / 9, 3.7 / 9 - (i+1)*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(3.9 / 9, 3.7 / 9 - i*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(5.25 / 9, 3.7 / 9 - i*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(5.25 / 9, 3.7 / 9 -(i + 1)*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(3.25 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(3.25 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(4.6 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(4.6 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
+			glEnd();
+
+			glBegin(GL_LINE_LOOP);
+			glColor3f(0, 0, 0); glVertex3f(4.6 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(4.6 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(5.95 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(5.95 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
 			glEnd();
 			glBegin(GL_LINE_LOOP);
-			glColor3f(0, 0, 0); glVertex3f(5.25 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(5.25 / 9, 3.7 / 9 - i*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(6.65/9, 3.7 / 9 - i*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(6.65/9, 3.7 / 9 - (i + 1)*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(5.95 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(5.95 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(7.3 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(7.3 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
 			glEnd();
+
 			glBegin(GL_LINE_LOOP);
-			glColor3f(0, 0, 0); glVertex3f(6.65 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(6.65 / 9, 3.7 / 9 - i*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(8. / 9, 3.7 / 9 - i*1. / 9, 0);
-			glColor3f(0, 0, 0); glVertex3f(8. / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(7.3 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(7.3 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(8.65 / 9, 3.7 / 9 - i*1. / 9, 0);
+			glColor3f(0, 0, 0); glVertex3f(8.65 / 9, 3.7 / 9 - (i + 1)*1. / 9, 0);
 			glEnd();
 		}
-	//confirm = false;
+		//confirm = false;
 	}
-	
 }
 
 void Draw_table2()
@@ -182,10 +189,12 @@ void Draw_table4()
 	if (str > 0 && str<12)
 	{
 		for (int i = 0; i < str; i++)
-			DrawText(table[i][0], strlen(table[i][0]), param1*12.96 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+			DrawText(table[i][0], strlen(table[i][0]), param1*12.3 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
 		for (int i = 0; i < str; i++)
-			DrawText(table[i][1], strlen(table[i][1]), param1*14.31 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+			DrawText(table[i][1], strlen(table[i][1]), param1*13.65 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
 		for (int i = 0; i < str; i++)
-			DrawText(table[i][2], strlen(table[i][2]), param1*15.71 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+			DrawText(table[i][2], strlen(table[i][2]), param1*15.0 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
+		for (int i = 0; i < str; i++)
+			DrawText(table[i][3], strlen(table[i][3]), param1*16.35 / 18, param2*12.05 / 18 - i*param2*1. / 18, black);
 	}
 }
